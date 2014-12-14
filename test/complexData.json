@@ -1,0 +1,79 @@
+{
+	"_csrf_token_" : "vbuyriiagehv",
+	"preOrderId" : "0",
+	"action" : "/eshipping/PlaceFclOrderFormAction",
+	"eventSubmitDoPlaceOrder" : "anything",
+	"identityCode" : "SESS_WS944560961_1414059658976_31",
+	"solutionId" : "2000034021",
+	"calculatorQuote" : "2000034021",
+	"calculatorShippingCompanyCode" : "CSCL",
+	"calculatorShipRouteCode" : "AUS2",
+	"calculatorLoadPortCode" : "CNNGB",
+	"calculatorDestinationPortCode" : "AUBNE",
+	"cnorCompanyName" : "TEST TEST ESHIPPING TEST",
+	"cnorAddress" : "EE",
+	"cnorCity" : "1",
+	"cnorCountry" : "CN",
+	"cnorTelCountryCode" : "1",
+	"cnorTelAreaCode" : "1",
+	"cnorTelNumber" : "1234567--111",
+	"cnorEmail" : "baifjtnog@gmail.com",
+	"cneeCompanyName" : "1",
+	"cneeAddress" : "1",
+	"cneeCity" : "1",
+	"cneeCountry" : "AU",
+	"cneeTelCountryCode" : "1",
+	"cneeTelAreaCode" : "1",
+	"cneeTelNumber" : "1",
+	"notifierAsCnee" : [
+		"true"
+	],
+	"consignorAsCnor" : [
+		"true"
+	],
+	"summarySumBox" : "1",
+	"summaryUnit" : "CARTON",
+	"summaryGrossWeight" : "1",
+	"summaryTotalVolume" : "1",
+	"summaryDeclaredValue" : "1",
+	"customerClearance" : "CUSTOMS_DELEGATION_ONETOUCH",
+	"inlandTransport" : "PROVIDER_TO_DOOR_PACKING",
+	"containerContactName" : "1",
+	"containerTelCountryCode" : "1",
+	"containerTelAreaCode" : "1",
+	"containerTelNumber" : "1",
+	"containerMobile" : "1",
+	"containerAddress" : "1",
+	"containerMemo" : "1",
+	"operateAgree" : [
+		"on"
+	],
+	"containerInfo" : [{
+			"containerType" : "20GP",
+			"containerNum" : "1",
+			"productImages" : [{
+					"name" : "wahaha",
+					"src" : "/usr/wahaha.jpg"
+				}, {
+					"name" : "haha"
+				}
+			]
+		}, {
+			"containerType" : "40GP",
+			"containerNum" : "2"
+		}, {
+			"containerType" : "40HQ",
+			"containerNum" : "2"
+		}
+	],
+	"products" : [{
+			"productCNName" : "1",
+			"productENName" : "1"
+		}
+	],
+	"addedService" : [
+		"CUSTOMS_DELEGATION_ONETOUCH",
+		"PROVIDER_TO_DOOR_PACKING"
+	],
+	"summaryMark" : "N/M"
+}

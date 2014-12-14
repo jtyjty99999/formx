@@ -1,0 +1,1070 @@
+{
+	"$.cnorCompanyName" : {
+		"path" : "$.cnorCompanyName",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "512"
+				}
+			}
+		]
+	},
+	"$.cnorCountry" : {
+		"path" : "$.cnorCountry",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "64"
+				}
+			}
+		]
+	},
+	"$.cnorProvince" : {
+		"path" : "$.cnorProvince",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "128"
+				}
+			}
+		]
+	},
+	"$.cnorCity" : {
+		"path" : "$.cnorCity",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "100"
+				}
+			}
+		]
+	},
+	"$.cnorAddress" : {
+		"path" : "$.cnorAddress",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "800"
+				}
+			}
+		]
+	},
+	"$.cnorZipCode" : {
+		"path" : "$.cnorZipCode",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "singleChar",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.cnorLinkman" : {
+		"path" : "$.cnorLinkman",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "128"
+				}
+			}
+		]
+	},
+	"$.cnorTelCountryCode" : {
+		"path" : "$.cnorTelCountryCode",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.cnorTelAreaCode" : {
+		"path" : "$.cnorTelAreaCode",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.cnorTelNumber" : {
+		"path" : "$.cnorTelNumber",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.cnorMobile" : {
+		"path" : "$.cnorMobile",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.cnorEmail" : {
+		"path" : "$.cnorEmail",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "email",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "96"
+				}
+			}
+		]
+	},
+	"$.cnorSave[*]" : {
+		"path" : "$.cnorSave[*]",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : []
+	},
+	"$.cneeToOrder[*]" : {
+		"path" : "$.cneeToOrder[*]",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : []
+	},
+	"$.cneeCompanyName" : {
+		"path" : "$.cneeCompanyName",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "512"
+				}
+			}
+		]
+	},
+	"$.cneeCountry" : {
+		"path" : "$.cneeCountry",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "64"
+				}
+			}
+		]
+	},
+	"$.cneeProvince" : {
+		"path" : "$.cneeProvince",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "128"
+				}
+			}
+		]
+	},
+	"$.cneeCity" : {
+		"path" : "$.cneeCity",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "100"
+				}
+			}
+		]
+	},
+	"$.cneeAddress" : {
+		"path" : "$.cneeAddress",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "800"
+				}
+			}
+		]
+	},
+	"$.cneeZipCode" : {
+		"path" : "$.cneeZipCode",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "singleChar",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.cneeLinkman" : {
+		"path" : "$.cneeLinkman",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "128"
+				}
+			}
+		]
+	},
+	"$.cneeTelCountryCode" : {
+		"path" : "$.cneeTelCountryCode",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.cneeTelAreaCode" : {
+		"path" : "$.cneeTelAreaCode",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.cneeTelNumber" : {
+		"path" : "$.cneeTelNumber",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.cneeMobile" : {
+		"path" : "$.cneeMobile",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.cneeEmail" : {
+		"path" : "$.cneeEmail",
+		"exclude" : "$.cneeToOrder[0] == 'TO ORDER'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "email",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "96"
+				}
+			}
+		]
+	},
+	"$.cneeSave[*]" : {
+		"path" : "$.cneeSave[*]",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : []
+	},
+	"$.notifierAsCnee[*]" : {
+		"path" : "$.notifierAsCnee[*]",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : []
+	},
+	"$.notifierCompanyName" : {
+		"path" : "$.notifierCompanyName",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "512"
+				}
+			}
+		]
+	},
+	"$.notifierCountry" : {
+		"path" : "$.notifierCountry",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "64"
+				}
+			}
+		]
+	},
+	"$.notifierProvince" : {
+		"path" : "$.notifierProvince",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "128"
+				}
+			}
+		]
+	},
+	"$.notifierCity" : {
+		"path" : "$.notifierCity",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "100"
+				}
+			}
+		]
+	},
+	"$.notifierAddress" : {
+		"path" : "$.notifierAddress",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "800"
+				}
+			}
+		]
+	},
+	"$.notifierZipCode" : {
+		"path" : "$.notifierZipCode",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "singleChar",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.notifierLinkman" : {
+		"path" : "$.notifierLinkman",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "128"
+				}
+			}
+		]
+	},
+	"$.notifierTelCountryCode" : {
+		"path" : "$.notifierTelCountryCode",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.notifierTelAreaCode" : {
+		"path" : "$.notifierTelAreaCode",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.notifierTelNumber" : {
+		"path" : "$.notifierTelNumber",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.notifierMobile" : {
+		"path" : "$.notifierMobile",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.notifierEmail" : {
+		"path" : "$.notifierEmail",
+		"exclude" : "$.notifierAsCnee[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "email",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "96"
+				}
+			}
+		]
+	},
+	"$.notifierSave[*]" : {
+		"path" : "$.notifierSave[*]",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : []
+	},
+	"$.consignorAsCnor[*]" : {
+		"path" : "$.consignorAsCnor[*]",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : []
+	},
+	"$.consignorCompanyName" : {
+		"path" : "$.consignorCompanyName",
+		"exclude" : "$.consignorAsCnor[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "512"
+				}
+			}
+		]
+	},
+	"$.consignorAddress" : {
+		"path" : "$.consignorAddress",
+		"exclude" : "$.consignorAsCnor[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "800"
+				}
+			}
+		]
+	},
+	"$.consignorLinkman" : {
+		"path" : "$.consignorLinkman",
+		"exclude" : "$.consignorAsCnor[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "128"
+				}
+			}
+		]
+	},
+	"$.consignorTelCountryCode" : {
+		"path" : "$.consignorTelCountryCode",
+		"exclude" : "$.consignorAsCnor[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.consignorTelAreaCode" : {
+		"path" : "$.consignorTelAreaCode",
+		"exclude" : "$.consignorAsCnor[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.consignorTelNumber" : {
+		"path" : "$.consignorTelNumber",
+		"exclude" : "$.consignorAsCnor[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.consignorMobile" : {
+		"path" : "$.consignorMobile",
+		"exclude" : "$.consignorAsCnor[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.consignorEmail" : {
+		"path" : "$.consignorEmail",
+		"exclude" : "$.consignorAsCnor[0] == 'true'",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "email",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "96"
+				}
+			}
+		]
+	},
+	"$.consignorSave[*]" : {
+		"path" : "$.consignorSave[*]",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : []
+	},
+	"$.products[*].productCNName" : {
+		"path" : "$.products[*].productCNName",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "312"
+				}
+			}
+		]
+	},
+	"$.products[*].productENName" : {
+		"path" : "$.products[*].productENName",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "312"
+				}
+			}
+		]
+	},
+	"$.containerInfo[*].containerNum" : {
+		"path" : "$.containerInfo[*].containerNum",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.summaryMark" : {
+		"path" : "$.summaryMark",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "300"
+				}
+			}
+		]
+	},
+	"$.summaryDeclaredValue" : {
+		"path" : "$.summaryDeclaredValue",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "number",
+				"params" : {}
+			}, {
+				"rulename" : "great",
+				"params" : {
+					"min" : "0"
+				}
+			}, {
+				"rulename" : "max",
+				"params" : {
+					"max" : "100000000"
+				}
+			}, {
+				"rulename" : "precision",
+				"params" : {
+					"point" : "2"
+				}
+			}
+		]
+	},
+	"$.summarySumBox" : {
+		"path" : "$.summarySumBox",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "min",
+				"params" : {
+					"min" : "1"
+				}
+			}, {
+				"rulename" : "max",
+				"params" : {
+					"max" : "20000000"
+				}
+			}
+		]
+	},
+	"$.summaryGrossWeight" : {
+		"path" : "$.summaryGrossWeight",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "number",
+				"params" : {}
+			}, {
+				"rulename" : "great",
+				"params" : {
+					"min" : "0"
+				}
+			}, {
+				"rulename" : "max",
+				"params" : {
+					"max" : "20000000"
+				}
+			}, {
+				"rulename" : "precision",
+				"params" : {
+					"point" : "3"
+				}
+			}
+		]
+	},
+	"$.summaryTotalVolume" : {
+		"path" : "$.summaryTotalVolume",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "number",
+				"params" : {}
+			}, {
+				"rulename" : "great",
+				"params" : {
+					"min" : "0"
+				}
+			}, {
+				"rulename" : "max",
+				"params" : {
+					"max" : "20000000"
+				}
+			}, {
+				"rulename" : "precision",
+				"params" : {
+					"point" : "3"
+				}
+			}
+		]
+	},
+	"$.summaryUnit" : {
+		"path" : "$.summaryUnit",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	},
+	"$.customerClearance" : {
+		"path" : "$.customerClearance",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	},
+	"$.inlandTransport" : {
+		"path" : "$.inlandTransport",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	},
+	"$.containerLoadTime" : {
+		"path" : "$.containerLoadTime",
+		"exclude" : "",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "96"
+				}
+			}
+		]
+	},
+	"$.containerContactName" : {
+		"path" : "$.containerContactName",
+		"exclude" : "",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "128"
+				}
+			}
+		]
+	},
+	"$.containerTelCountryCode" : {
+		"path" : "$.containerTelCountryCode",
+		"exclude" : "",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.containerTelAreaCode" : {
+		"path" : "$.containerTelAreaCode",
+		"exclude" : "",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "8"
+				}
+			}
+		]
+	},
+	"$.containerPhoneNum" : {
+		"path" : "$.containerPhoneNum",
+		"exclude" : "",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.containerMobile" : {
+		"path" : "$.containerMobile",
+		"exclude" : "",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "uInteger",
+				"params" : {}
+			}, {
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "16"
+				}
+			}
+		]
+	},
+	"$.containerAddress" : {
+		"path" : "$.containerAddress",
+		"exclude" : "",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "800"
+				}
+			}
+		]
+	},
+	"$.containerMemo" : {
+		"path" : "$.containerMemo",
+		"exclude" : "",
+		"skipHidden" : true,
+		"rules" : [{
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "1024"
+				}
+			}
+		]
+	},
+	"$.orderRemark" : {
+		"path" : "$.orderRemark",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "maxlength",
+				"params" : {
+					"max" : "1024"
+				}
+			}
+		]
+	},
+	"$.operateAgree[*]" : {
+		"path" : "$.operateAgree[*]",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	},
+	"$.containerInfo[*].productImages[*]" : {
+		"path" : "$.containerInfo[*].productImages[*]",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	},
+	"$.containerInfo[*].productImages[*].src" : {
+		"path" : "$.containerInfo[*].productImages[*].src",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	},
+	"$.containerInfo[*].productImages[*].name" : {
+		"path" : "$.containerInfo[*].productImages[*].name",
+		"exclude" : "",
+		"skipHidden" : false,
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	}
+}

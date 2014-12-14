@@ -1,0 +1,22 @@
+{
+  "name": "formx",
+  "version": "0.0.1",
+  "description": "json-path driven form validator framework",
+  "keywords": [
+    "validator",
+	"form",
+	"json-path"
+  ],
+  "author": "姜天意<tianyi.jiangty@alibaba-inc.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtyjty99999/formx.git"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "dependencies": {
+  }
+}

@@ -1,0 +1,53 @@
+{
+	"billInvoiceTitle" : {
+		"required" : false,
+		"path" : "$.billInvoiceTitle",
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}, {
+				"rulename" : "required",
+				"params" : {
+					"max" : "1024"
+				}
+			}
+		]
+	},
+	"billOfLading" : {
+		"required" : true,
+		"path" : "$.billOfLading",
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	},
+	"emptyOne" : {
+		"required" : true,
+		"path" : "$.emptyOne",
+		"exclude" : "$.billInvoiceTitle != empty",
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	},
+	"emptyTwo" : {
+		"required" : true,
+		"path" : "$.emptyTwo",
+		"rules" : [{
+				"rulename" : "required",
+				"params" : {}
+			}
+		]
+	},
+	"donkey" : {
+		"required" : true,
+		"path" : "$.donkey",
+		"rules" : [{
+				"rulename" : "english",
+				"params" : {}
+			}
+		]
+	}
+}
